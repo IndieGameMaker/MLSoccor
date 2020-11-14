@@ -33,6 +33,9 @@ public class BallCtrl : MonoBehaviour
 
             transform.localPosition = new Vector3(0.0f, 3.0f, 0.0f);
             rb.velocity = rb.angularVelocity = Vector3.zero;
+
+            ++blueScore;
+            blueScoreText.text = blueScore.ToString("000");
         }
 
         if (coll.gameObject.CompareTag("BLUE_GOAL"))
@@ -46,6 +49,9 @@ public class BallCtrl : MonoBehaviour
             
             transform.localPosition = new Vector3(0.0f, 3.0f, 0.0f);
             rb.velocity = rb.angularVelocity = Vector3.zero;
+            
+            ++redScore;
+            redScoreText.text = redScore.ToString("000");
         }        
     }
 }
