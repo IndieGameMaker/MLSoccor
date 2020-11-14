@@ -65,7 +65,7 @@ public class PlayerAgent : Agent
 
     public override void OnActionReceived(float[] vectorAction)
     {
-        Debug.Log($"[0]={vectorAction[0]} , [1]={vectorAction[1]} , [2]={vectorAction[2]} ")
+        Debug.Log($"[0]={vectorAction[0]} , [1]={vectorAction[1]} , [2]={vectorAction[2]} ");
     }
 
     public override void Heuristic(float[] actionsOut)
