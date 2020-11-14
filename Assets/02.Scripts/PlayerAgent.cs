@@ -73,6 +73,37 @@ public class PlayerAgent : Agent
         int right   = (int)vectorAction[1];
         int rotate  = (int)vectorAction[2];
 
+        switch(forward)
+        {
+            case 0: break;
+            case 1:
+                    dir = transform.forward;
+                    break;
+            case 2: 
+                    dir = transform.forward * -1f;
+                    break;
+        }
+        switch(right)
+        {
+            case 0: break;
+            case 1:
+                    dir = transform.right * -1f;
+                    break;
+            case 2:
+                    dir = transform.right;
+                    break;
+        }
+        switch(rotate)
+        {
+            case 0: break;
+            case 1:
+                    rot = transform.up * -1f;
+                    break;
+            case 2: 
+                    rot = transform.up;
+                    break;
+        }
+
     }
 
     public override void Heuristic(float[] actionsOut)
