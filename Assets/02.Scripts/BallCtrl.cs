@@ -2,11 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
+using UnityEngine.UI;
 
 public class BallCtrl : MonoBehaviour
 {
     public Agent[] players;
     private Rigidbody rb;
+
+    public Text blueScoreText;
+    public Text redScoreText;
+
+    private int blueScore;
+    private int redScore;
 
     void Start()
     {
