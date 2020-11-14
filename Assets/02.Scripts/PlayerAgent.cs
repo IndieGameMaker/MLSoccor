@@ -104,7 +104,12 @@ public class PlayerAgent : Agent
                     break;
         }
 
+        //회전 및 이동처리
+        transform.Rotate(rot, Time.deltaTime * 100.0f);
+        rb.AddForce(dir * moveSpeed, ForceMode.VelocityChange);
     }
+
+    public float moveSpeed = 1.0f;
 
     public override void Heuristic(float[] actionsOut)
     {
