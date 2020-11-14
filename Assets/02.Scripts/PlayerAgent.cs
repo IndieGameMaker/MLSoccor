@@ -21,6 +21,8 @@ public class PlayerAgent : Agent
     private BehaviorParameters bps;
     private Rigidbody rb;
 
+    public float kickForce = 0.0f;
+
     public override void Initialize()
     {
         rb = GetComponent<Rigidbody>();
@@ -78,9 +80,11 @@ public class PlayerAgent : Agent
             case 0: break;
             case 1:
                     dir = transform.forward;
+                    kickForce = 800.0f;
                     break;
             case 2: 
                     dir = transform.forward * -1f;
+                    kickForce = 0.0f;
                     break;
         }
         switch(right)

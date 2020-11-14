@@ -1427,30 +1427,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393425020}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1518375073 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5920066044307786516, guid: a1749336b98fb44aa95fa0aea98f96a4, type: 3}
-  m_PrefabInstance: {fileID: 5920066045272513461}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1518375074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5920066044307786519, guid: a1749336b98fb44aa95fa0aea98f96a4, type: 3}
   m_PrefabInstance: {fileID: 5920066045272513461}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1518375075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518375073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
 --- !u!1 &1695682736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +1984,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1322874112}
     m_Modifications:
+    - target: {fileID: 5920066044307786515, guid: a1749336b98fb44aa95fa0aea98f96a4, type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 5920066044307786516, guid: a1749336b98fb44aa95fa0aea98f96a4, type: 3}
       propertyPath: m_Name
       value: Player
