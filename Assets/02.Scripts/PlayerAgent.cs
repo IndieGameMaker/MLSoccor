@@ -5,16 +5,29 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Policies;
 
-public class PlayerAgent : MonoBehaviour
+public class PlayerAgent : Agent
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Initialize()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnEpisodeBegin()
+    {
+
+    }
+
+    public override void CollectObservations(VectorSensor sensor)
+    {
+
+    }
+
+    public override void OnActionReceived(float[] vectorAction)
+    {
+
+    }
+
+    public override void Heuristic(float[] actionsOut)
     {
         
     }
