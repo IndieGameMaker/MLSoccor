@@ -12,6 +12,8 @@ public class PlayerAgent : Agent
         BLUE = 0, RED = 1
     }
 
+    public TEAM team;
+
     public override void Initialize()
     {
 
