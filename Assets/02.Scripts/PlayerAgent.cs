@@ -23,7 +23,12 @@ public class PlayerAgent : Agent
 
     public override void Initialize()
     {
+        rb = GetComponent<Rigidbody>();
+        bps = GetComponent<BehaviorParameters>();
 
+        rb.maxAngularVelocity = 500.0f;
+        //Team ID 추출
+        team = (TEAM)bps.TeamId;
     }
 
     public override void OnEpisodeBegin()
