@@ -87,20 +87,20 @@ public class PlayerAgent : Agent
         {
             case 0: break;
             case 1:
-                    dir = transform.right * -1f;
+                    dir = transform.right * -1f;    //왼쪽으로 이동
                     break;
             case 2:
-                    dir = transform.right;
+                    dir = transform.right;          //오른쪽으로 이동
                     break;
         }
         switch(rotate)
         {
             case 0: break;
             case 1:
-                    rot = transform.up * -1f;
+                    rot = transform.up * -1f;   //왼쪽으로 회전
                     break;
             case 2: 
-                    rot = transform.up;
+                    rot = transform.up;         //오른쪽으로 회전
                     break;
         }
 
