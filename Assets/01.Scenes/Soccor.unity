@@ -1028,6 +1028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7cb7c129b7ec1fb4293dd40773bdce33, type: 3}
+      propertyPath: m_TagString
+      value: BALL
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7cb7c129b7ec1fb4293dd40773bdce33, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1984,10 +1988,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1322874112}
     m_Modifications:
-    - target: {fileID: 5920066044307786515, guid: a1749336b98fb44aa95fa0aea98f96a4, type: 3}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 5920066044307786516, guid: a1749336b98fb44aa95fa0aea98f96a4, type: 3}
       propertyPath: m_Name
       value: Player
