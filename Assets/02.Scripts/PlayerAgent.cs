@@ -145,4 +145,16 @@ public class PlayerAgent : Agent
         if (Input.GetKey(KeyCode.D)) actionsOut[2] = 2f;
 
     }
+
+    void OnCollisionEnter(Collision coll)
+    {
+        if (coll.collider.CompareTag("BALL"))
+        {
+            AddReward(0.2f);
+            Vector3 shootDir = coll.contacts[0].point - transform.position;
+            shootDir = shootDir.normalized;
+
+            coll.gameObject.GetComponent<Rigidbody>().AddForce(shootDir * kickForce);
+        }
+    }
 }
