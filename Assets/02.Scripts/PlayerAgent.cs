@@ -84,6 +84,18 @@ public class PlayerAgent : Agent
         }
 
         //좌우 이동 0, 1, 2 (Non, Q, E) Branch[1] size = 3
-        
+        if (Input.GetKey(KeyCode.Q))
+        {
+            actionsOut[1] = 1f;
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            actionsOut[1] = 2f;
+        }
+
+        //좌우 회전 0, 1, 2 (Non, A, D) Branch[2] size = 3
+        if (Input.GetKey(KeyCode.A)) actionsOut[2] = 1f;
+        if (Input.GetKey(KeyCode.D)) actionsOut[2] = 2f;
+
     }
 }
