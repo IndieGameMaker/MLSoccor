@@ -7,6 +7,11 @@ using Unity.MLAgents.Policies;
 
 public class PlayerAgent : Agent
 {
+    public enum TEAM
+    {
+        BLUE = 0, RED = 1
+    }
+
     public override void Initialize()
     {
 
@@ -29,6 +34,6 @@ public class PlayerAgent : Agent
 
     public override void Heuristic(float[] actionsOut)
     {
-        
+
     }
 }
