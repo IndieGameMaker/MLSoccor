@@ -29,6 +29,23 @@ public class PlayerAgent : Agent
         rb.maxAngularVelocity = 500.0f;
         //Team ID 추출
         team = (TEAM)bps.TeamId;
+
+        //Team ID 별 초기설정
+        if (team == TEAM.BLUE)
+        {
+            players[bps.TeamId].SetActive(true);
+            initPos = new Vector3(-6.0f, 0.5f, 0.0f);
+            transform.localPosition = initPos;
+            transform.localRotation = Quaternion.Euler(Vector3.up * 90.0f);
+        }
+
+        if (team == TEAM.RED)
+        {
+            players[bps.TeamId].SetActive(true);
+            initPos = new Vector3(+6.0f, 0.5f, 0.0f);
+            transform.localPosition = initPos;
+            transform.localRotation = Quaternion.Euler(0.0f, -90.0f, 0.0f);
+        }
     }
 
     public override void OnEpisodeBegin()
