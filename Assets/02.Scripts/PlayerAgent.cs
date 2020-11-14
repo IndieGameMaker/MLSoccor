@@ -13,6 +13,7 @@ public class PlayerAgent : Agent
     }
 
     public TEAM team;
+    public GameObject[] players;
 
     public override void Initialize()
     {
