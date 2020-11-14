@@ -28,6 +28,11 @@ TagManager:
   - badFood
   - food
   - BALL
+  - WALL
+  - BLUE_GOAL
+  - RED_GOAL
+  - BLUE_PLAYER
+  - RED_PLAYER
   layers:
   - Default
   - TransparentFX
