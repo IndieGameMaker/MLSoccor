@@ -23,6 +23,9 @@ public class BallCtrl : MonoBehaviour
             players[1].AddReward(-1.0f);
             players[0].EndEpisode();
             players[1].EndEpisode();
+
+            transform.localPosition = new Vector3(0.0f, 3.0f, 0.0f);
+            rb.velocity = rb.angularVelocity = Vector3.zero;
         }
 
         if (coll.gameObject.CompareTag("BLUE_GOAL"))
@@ -33,9 +36,9 @@ public class BallCtrl : MonoBehaviour
             players[1].AddReward(+1.0f);
             players[0].EndEpisode();
             players[1].EndEpisode();
+            
+            transform.localPosition = new Vector3(0.0f, 3.0f, 0.0f);
+            rb.velocity = rb.angularVelocity = Vector3.zero;
         }        
-
-        transform.localPosition = new Vector3(0.0f, 3.0f, 0.0f);
-        rb.velocity = rb.angularVelocity = Vector3.zero;
     }
 }
