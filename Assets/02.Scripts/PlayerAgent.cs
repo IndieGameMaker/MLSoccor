@@ -25,6 +25,7 @@ public class PlayerAgent : Agent
 
     public override void Initialize()
     {
+        MaxStep = 10000;
         rb = GetComponent<Rigidbody>();
         bps = GetComponent<BehaviorParameters>();
 
