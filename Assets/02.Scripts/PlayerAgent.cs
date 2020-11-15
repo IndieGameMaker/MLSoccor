@@ -76,6 +76,8 @@ public class PlayerAgent : Agent
         int right   = (int)vectorAction[1];
         int rotate  = (int)vectorAction[2];
 
+        kickForce = 0.0f;
+
         switch(forward)
         {
             case 0: break;
